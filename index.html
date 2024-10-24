@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        dialog{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border: none;
+            background-color: transparent;
+        }
+        .card{
+            width: 300px;
+            min-height: 250px;
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        .container{
+            background-color: rgba(0, 0, 0, 0.203);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card img{
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: auto;
+            transform: translateY(-65px);
+        }
+        button{
+            border: none;
+        }
+        .contact-btn{
+                  width: 100%;
+                  background-color: green;
+                  padding: 10px;
+                  margin-top: 20px;
+                  font-weight: 700;
+
+        }
+        .close-btn{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: red;
+            color: #fff;
+            font-weight: 700;
+        }
+        .card p{
+            color: gray;
+        }
+        .show-btn{
+            padding: 10px;
+            margin: auto;
+            display: block;
+            margin-top: 30px;
+            background-color: rgb(63, 155, 63);
+            cursor: pointer;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+        <center>
+            <h1> Dialog tag </h1>
+            <p>The dialog element represents a part of a application thar a user interacts with to perform a task for example a dialog box , insperctor , or window </p>
+        </center>
+
+        <hr>
+
+        <button onclick="showDialog()" class="show-btn"> Show Dialog</button>
+
+        <dialog id="popup">
+              <div class="container">
+                <div class="card">
+                       <img src="https://static-00.iconduck.com/assets.00/success-icon-2048x2048-8woikx05.png" alt="">
+                       <h2>Asesome </h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi perspiciatis</p>
+                       <button class="contact-btn"> Cotnact us</button>
+                       <button class="close-btn" onclick="closePopup()"> Close </button>
+                </div>
+
+              </div>
+        </dialog>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aspernatur facilis culpa quidem magnam harum, necessitatibus architecto minus commodi nesciunt accusantium distinctio adipisci deserunt ullam animi quisquam mollitia nulla doloremque?
+        Cumque assumenda hic iure sequi. Fugit voluptatibus, aspernatur perspiciatis veritatis nulla perferendis quo atque vero harum, eius minus rerum ipsa fugiat repudiandae architecto doloribus quis. At, facilis. Facere, reiciendis sint?
+        Hic vel, delectus iure nisi quis quam illo dolore adipisci laboriosam, libero asperiores repellat aliquid, cupiditate quasi! In dolor optio dignissimos vitae aperiam fugiat, dolore, voluptas expedita fuga rem natus.
+        Facere aliquid ducimus facilis amet, perspiciatis dolore nostrum ut, sapiente obcaecati et velit eveniet ipsum quae? Officiis autem et a magni numquam tempora esse, rem nihil labore aspernatur quis veniam?
+        Pariatur nulla reprehenderit hic? Tenetur ducimus magnam minus voluptas repellat? Officia, reprehenderit suscipit necessitatibus culpa voluptatum veritatis omnis autem repellendus itaque alias dolorum nemo sequi modi quod corporis perferendis. Unde.
+        Libero laborum repellendus dolorem deserunt harum ducimus, omnis laudantium voluptas unde eaque, doloribus sapiente quo esse beatae. Veritatis tempora dolorum laborum deserunt, consequuntur neque molestias consectetur? Assumenda sint hic exercitationem.
+        Voluptates quis nisi eaque hic totam labore saepe? Laudantium reprehenderit iusto nostrum inventore ex neque ipsam, adipisci error rem explicabo reiciendis officia dolor quia minima, nesciunt nobis. Laboriosam, a molestiae.
+        Temporibus accusantium esse optio saepe quia. In atque nemo illo cupiditate corrupti accusantium maiores! Voluptatum nihil corporis facilis rerum non? Suscipit, quo alias? Nam eius neque assumenda rerum, ipsum molestiae.
+        Officia veritatis porro vero cupiditate, cum dignissimos minus fuga id odit impedit natus provident voluptatibus hic iure distinctio aspernatur molestiae laboriosam numquam libero error perferendis iste. Sapiente perspiciatis eligendi saepe?
+        Deleniti commodi qui labore, corrupti sequi eum quod. Ad atque adipisci distinctio hic error deleniti ut nihil cupiditate excepturi omnis corrupti fugiat fuga eum placeat maiores itaque mollitia, tempora sint!</p>
+         
+
+        <script>
+            const dialogTag = document.getElementById('popup');
+            function showDialog(){
+                dialogTag.show()
+            }
+            function closePopup(){
+                dialogTag.close()
+            }
+        </script>
+
+</body>
+</html>
